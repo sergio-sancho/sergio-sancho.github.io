@@ -1,0 +1,17 @@
+# Work experience, newest first. `note` (optional) is an extra description line.
+# `org_url` (optional) makes the organization name a link.
+- period: "2023.11 – 2024.02"
+  role: "Research Internship"
+  org: "Disney Research"
+  org_url: "https://www.disneyresearch.com/"
+  topic: "Efficient cloth simulation with Machine Learning"
+- period: "2021.01 – 2021.06"
+  role: "Research & Development"
+  org: "Robotics Institute - University of Valencia"
+  org_url: "https://www.uv.es/uvweb/university-research-institute-robotics-information-communication-technologies/en/university-research-institute-robotics-information-communication-technologies-irtic-1285895240418.html"
+  topic: "Real-time simulation and biological simulation development"
+- period: "2019.10 – 2020.05"
+  role: "Research & Development Internship"
+  org: "Robotics Institute - University of Valencia"
+  org_url: "https://www.uv.es/uvweb/university-research-institute-robotics-information-communication-technologies/en/university-research-institute-robotics-information-communication-technologies-irtic-1285895240418.html"
+  topic: "Virtual Reality techniques on real-time simulation"

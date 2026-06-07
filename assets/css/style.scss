@@ -100,12 +100,26 @@ section { margin-top: 44px; }
 }
 
 // ---- Publication / project entries --------------------------------------
-.entry-list { display: flex; flex-direction: column; gap: 26px; }
+.entry-list { display: flex; flex-direction: column; }
 
 .entry {
   display: flex;
   gap: 22px;
   align-items: center;
+  position: relative;
+  padding: 26px 0;
+}
+.entry:first-child { padding-top: 8px; }
+.entry:last-child { padding-bottom: 4px; }
+// Soft gradient hairline between consecutive entries (fades at both ends).
+.entry + .entry::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, $rule 18%, $rule 82%, transparent);
 }
 .entry-media { flex: 0 0 280px; }
 .thumb {
@@ -158,13 +172,13 @@ section { margin-top: 44px; }
 
 // ---- Records (education / teaching) -------------------------------------
 .records ul { list-style: none; padding: 0; margin: 0; }
-.records li { padding: 4px 0; }
+.records li { display: flex; gap: 12px; padding: 6px 0; }
 .period {
-  display: inline-block;
-  min-width: 150px;
+  flex: 0 0 150px;
   color: $muted;
   font-variant-numeric: tabular-nums;
 }
+.record-body { flex: 1 1 auto; }
 
 // ---- Write-up pages ------------------------------------------------------
 .back-link { margin: 0 0 24px; font-size: 14px; }
@@ -204,5 +218,6 @@ section { margin-top: 44px; }
   .entry { flex-direction: column; align-items: stretch; }
   .entry-media { flex-basis: auto; width: 100%; }
   .thumb { width: 100%; height: auto; aspect-ratio: 16 / 9; }
-  .period { min-width: 0; display: block; }
+  .records li { flex-direction: column; gap: 2px; }
+  .period { flex-basis: auto; }
 }

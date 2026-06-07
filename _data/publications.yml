@@ -18,15 +18,23 @@
     - { name: "Jingwei Tang" }
     - { name: "Markus Gross", url: "https://cgl.ethz.ch/people/grossm/" }
     - { name: "Vinicius Azevedo" }
-  venue: "CVPR"
-  year: 2025
-  highlight: "Oral Presentation"
-  medal: false            # distinction, not an award -> no medal icon
+  venues:
+    - name: "CVPR"
+      year: 2025
+      highlights:
+        - { text: "Oral Presentation", medal: false }
+    - name: "SIGGRAPH 2025 Emerging Technologies"
+      highlights:
+        - { text: "DCAJ Award", url: "https://s2025.siggraph.org/program/emerging-technologies/" }
+        - { text: "Laval Virtual Award", url: "https://s2025.siggraph.org/program/emerging-technologies/" }
   abstract: >
     We repurpose latent diffusion models to generate high-quality, complex,
     multi-view optical illusions such as anamorphoses.
   links:
-    - { text: "arXiv", url: "#" }
+    - { text: "project", url: "https://lookingglass-lpw.github.io/" }
+    - { text: "arXiv", url: "https://arxiv.org/abs/2504.08902" }
+    - { text: "video", url: "https://www.youtube.com/watch?v=B3AZay43688" }
+    - { text: "SIGGRAPH ET", url: "https://dl.acm.org/doi/10.1145/3721257.3734031" }
 
 - title: "The Impulse Particle-In-Cell Method"
   image: 2024_ipic.jpg
@@ -38,6 +46,7 @@
   venue: "Eurographics"
   year: 2024
   highlight: "Best Paper Honorable Mention"
+  highlight_url: "https://www.eg.org/wp/eurographics-awards-programme/other-eg-awards/2297-2/"
   abstract: >
     We propose a hybrid fluid simulation method that uses the impulse formulation
     on particles to improve vorticity preservation.

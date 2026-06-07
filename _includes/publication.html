@@ -17,8 +17,17 @@ Renders one publication card. Expects `include.pub`.
         {%- unless forloop.last %}, {% endunless -%}
       {%- endfor -%}
     </span><br>
-    <span class="entry-meta"><em>{{ include.pub.venue }}</em>, {{ include.pub.year }}
-      {%- if include.pub.highlight %} {% include badge.html text=include.pub.highlight icon=include.pub.medal %}{% endif %}</span>
+    {%- if include.pub.venues -%}
+      {%- for v in include.pub.venues -%}
+        <span class="entry-meta"><em>{{ v.name }}</em>{% if v.year %}, {{ v.year }}{% endif %}
+          {%- for h in v.highlights %} {% if h.url %}<a href="{{ h.url }}">{% include badge.html text=h.text icon=h.medal %}</a>{% else %}{% include badge.html text=h.text icon=h.medal %}{% endif %}{% endfor -%}
+        </span>{% unless forloop.last %}<br>{% endunless %}
+      {%- endfor -%}
+    {%- else -%}
+      <span class="entry-meta"><em>{{ include.pub.venue }}</em>, {{ include.pub.year }}
+        {%- if include.pub.highlight %} {% if include.pub.highlight_url %}<a href="{{ include.pub.highlight_url }}">{% include badge.html text=include.pub.highlight icon=include.pub.medal %}</a>{% else %}{% include badge.html text=include.pub.highlight icon=include.pub.medal %}{% endif %}{% endif -%}
+      </span>
+    {%- endif -%}
     <div class="links-row">
       {% for l in include.pub.links -%}
         <a class="btn" href="{{ l.url }}">{{ l.text }}</a>

@@ -44,7 +44,23 @@ title: Sergio Sancho
   <h2>Education</h2>
   <ul>
     {% for e in site.data.education %}
-      <li><span class="period">{{ e.period }}</span> {{ e.title }} <span class="muted">({{ e.location }})</span></li>
+      <li><span class="period">{{ e.period }}</span><span class="record-body">{{ e.title }} <span class="muted">({{ e.location }})</span></span></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="records">
+  <h2>Work Experience</h2>
+  <ul>
+    {% for x in site.data.experience %}
+      <li>
+        <span class="period">{{ x.period }}</span>
+        <span class="record-body">
+          <strong>{{ x.role }}</strong> at {% if x.org_url %}<a href="{{ x.org_url }}">{{ x.org }}</a>{% else %}{{ x.org }}{% endif %}
+          {%- if x.note %}<br><span class="muted">{{ x.note }}</span>{% endif %}
+          <br><span class="muted"><em>Topic: {{ x.topic }}</em></span>
+        </span>
+      </li>
     {% endfor %}
   </ul>
 </section>
@@ -53,7 +69,7 @@ title: Sergio Sancho
   <h2>Teaching</h2>
   <ul>
     {% for t in site.data.teaching %}
-      <li><a href="{{ t.url }}">{{ t.code }}: {{ t.name }}</a></li>
+      <li><span class="record-body"><a href="{{ t.url }}">{{ t.code }}: {{ t.name }}</a></span></li>
     {% endfor %}
   </ul>
 </section>
