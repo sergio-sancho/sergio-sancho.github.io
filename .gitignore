@@ -1,0 +1,11 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+vendor/
+.bundle/
+.gem/
+Gemfile.lock
+
+# Local Claude Code preview helpers (not for the repo)
+.claude/

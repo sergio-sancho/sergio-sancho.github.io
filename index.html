@@ -1,0 +1,59 @@
+---
+layout: default
+title: Sergio Sancho
+---
+
+<section class="intro">
+  <div class="intro-text">
+    <h1 class="name">Sergio Sancho</h1>
+    <p>
+      I'm a joint PhD student at <a href="https://cgl.ethz.ch/">ETH Zurich</a> and
+      <a href="https://www.disneyresearch.com/">Disney Research</a>, supervised by
+      <a href="https://cgl.ethz.ch/people/grossm/">Markus Gross</a> and
+      <a href="https://studios.disneyresearch.com/people/marios-papas/">Marios Papas</a>.
+      I earned my Master's degree in 2023 from ETH Zurich, and my Bachelor's degree in 2020
+      from the University of Valencia.
+    </p>
+    <p>
+      Since early on, I've been fascinated by the technical and creative sides of filmmaking,
+      especially animation. My research focuses on computer graphics, physically-based rendering
+      and simulation, and how these areas connect with machine learning and generative models.
+    </p>
+    {% include icon-links.html %}
+  </div>
+  <div class="intro-photo">
+    <img src="{{ '/assets/images/SergioSancho.jpg' | relative_url }}" alt="Sergio Sancho">
+  </div>
+</section>
+
+<section>
+  <h2>Research</h2>
+  <div class="entry-list">
+    {% for pub in site.data.publications %}{% include publication.html pub=pub %}{% endfor %}
+  </div>
+</section>
+
+<section>
+  <h2>Other Projects</h2>
+  <div class="entry-list">
+    {% for proj in site.data.projects %}{% include project-card.html proj=proj %}{% endfor %}
+  </div>
+</section>
+
+<section class="records">
+  <h2>Education</h2>
+  <ul>
+    {% for e in site.data.education %}
+      <li><span class="period">{{ e.period }}</span> {{ e.title }} <span class="muted">({{ e.location }})</span></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="records">
+  <h2>Teaching</h2>
+  <ul>
+    {% for t in site.data.teaching %}
+      <li><a href="{{ t.url }}">{{ t.code }}: {{ t.name }}</a></li>
+    {% endfor %}
+  </ul>
+</section>

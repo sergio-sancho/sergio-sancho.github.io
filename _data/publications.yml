@@ -1,0 +1,65 @@
+# Add a publication by appending an entry here — no HTML editing needed.
+# Fields:
+#   title     (required)
+#   image     filename in assets/images/   (use EITHER image OR video)
+#   video     filename in assets/images/   (mp4, autoplays muted/looping)
+#   authors   list of { name, url?, me? }  — set me: true for Sergio (bolded)
+#   venue, year
+#   highlight optional red badge text (e.g. "Oral Presentation")
+#   abstract  short summary
+#   links     list of { text, url }
+#   writeup   optional { slug: <_projects filename without .md> } -> adds a write-up link
+
+- title: "LookingGlass: Generative Anamorphoses via Laplacian Pyramid Warping"
+  image: 2025_lookingglass.jpg
+  authors:
+    - { name: "Pascal Chang", url: "https://pascalchang87.github.io/" }
+    - { name: "Sergio Sancho", me: true }
+    - { name: "Jingwei Tang", url: "https://studios.disneyresearch.com/people/jingwei-tang/" }
+    - { name: "Markus Gross", url: "https://cgl.ethz.ch/people/grossm/" }
+    - { name: "Vinicius Azevedo", url: "https://studios.disneyresearch.com/people/vinicius-da-costa-de-azevedo/" }
+  venue: "CVPR"
+  year: 2025
+  highlight: "Oral Presentation"
+  abstract: >
+    We repurpose latent diffusion models to generate high-quality, complex,
+    multi-view optical illusions such as anamorphoses.
+  links:
+    - { text: "arXiv", url: "#" }
+
+- title: "The Impulse Particle-In-Cell Method"
+  image: 2024_ipic.jpg
+  authors:
+    - { name: "Sergio Sancho", me: true }
+    - { name: "Jingwei Tang", url: "https://studios.disneyresearch.com/people/jingwei-tang/" }
+    - { name: "Christopher Batty", url: "https://cs.uwaterloo.ca/~c2batty/" }
+    - { name: "Vinicius Azevedo", url: "https://studios.disneyresearch.com/people/vinicius-da-costa-de-azevedo/" }
+  venue: "Eurographics"
+  year: 2024
+  highlight: "Honorable Mention"
+  abstract: >
+    We propose a hybrid fluid simulation method that uses the impulse formulation
+    on particles to improve vorticity preservation.
+  links:
+    - { text: "project", url: "https://studios.disneyresearch.com/2024/04/25/the-impulse-particle-in-cell-method/" }
+    - { text: "paper", url: "https://assets.studios.disneyresearch.com/app/uploads/2024/04/The-Impulse-Particle-In-Cell-Method-Paper.pdf" }
+    - { text: "video", url: "https://www.youtube.com/watch?v=cmDSsBZ16MY" }
+  writeup: { slug: ipic-fluid-simulation }
+
+- title: "ANISE: an application to design mechanobiology simulations of planar epithelia"
+  image: 2022_anise.jpeg
+  authors:
+    - { name: "Ángel Rodríguez Cerro", url: "https://producciocientifica.uv.es/investigadores/335863/detalle" }
+    - { name: "Sergio Sancho", me: true }
+    - { name: "Míriam Rodríguez", url: "https://academic.oup.com/bioinformatics/search-results?f_Authors=M%c3%adriam+Rodr%c3%adguez" }
+    - { name: "Miguel A. Gamón", url: "https://www.uv.es/uvweb/universidad/es/ficha-persona-1285950309813.html?p2=magamon&idA=" }
+    - { name: "Léna Guitou", url: "https://scholar.google.com/citations?user=MCADaA0AAAAJ" }
+    - { name: "Rafael J. Martínez", url: "https://producciocientifica.uv.es/investigadores/364921/detalle" }
+    - { name: "Javier Buceta", url: "https://scholar.google.com/citations?user=IE64vjgAAAAJ&hl=en" }
+  venue: "Bioinformatics, Volume 38, Issue 17"
+  year: 2022
+  abstract: >
+    We develop a user-friendly application that simplifies the setup of
+    mechanobiology simulations through a comprehensive graphical interface.
+  links:
+    - { text: "article", url: "https://academic.oup.com/bioinformatics/article/38/17/4246/6646983" }

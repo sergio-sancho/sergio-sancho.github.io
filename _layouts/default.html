@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  <main class="container">
+    {% if page.url != "/" %}
+      <p class="back-link"><a href="{{ '/' | relative_url }}">← back</a></p>
+    {% endif %}
+    {{ content }}
+    {% include footer.html %}
+  </main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{%- comment -%}
+Renders one publication card. Expects `include.pub`.
+{%- endcomment -%}
+<div class="entry">
+  <div class="entry-media">
+    {% if include.pub.video %}
+      <video class="thumb" src="{{ '/assets/images/' | append: include.pub.video | relative_url }}" autoplay loop muted playsinline></video>
+    {% else %}
+      <img class="thumb" src="{{ '/assets/images/' | append: include.pub.image | relative_url }}" alt="{{ include.pub.title }}">
+    {% endif %}
+  </div>
+  <div class="entry-body">
+    <span class="entry-title">{{ include.pub.title }}</span><br>
+    {% for a in include.pub.authors -%}
+      {%- if a.me %}<strong>{{ a.name }}</strong>{% elsif a.url %}<a href="{{ a.url }}">{{ a.name }}</a>{% else %}{{ a.name }}{% endif -%}
+      {%- unless forloop.last %}, {% endunless -%}
+    {%- endfor %}<br>
+    <em>{{ include.pub.venue }}</em>, {{ include.pub.year }}
+    {%- if include.pub.highlight %} <span class="badge">{{ include.pub.highlight }}</span>{% endif %}<br>
+    {% for l in include.pub.links -%}
+      <a href="{{ l.url }}">{{ l.text }}</a>{% unless forloop.last %} / {% endunless %}
+    {%- endfor %}
+    {%- if include.pub.writeup.slug %} / <a href="{{ '/projects/' | append: include.pub.writeup.slug | append: '/' | relative_url }}">write-up</a>{% endif %}
+    <p class="abstract">{{ include.pub.abstract }}</p>
+  </div>
+</div>

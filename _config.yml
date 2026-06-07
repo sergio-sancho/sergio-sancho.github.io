@@ -1,0 +1,27 @@
+title: Sergio Sancho
+description: PhD student in computer graphics at ETH Zurich / Disney Research.
+url: "https://sergio-sancho.github.io"
+baseurl: ""            # user site -> served at the domain root; must be empty
+
+markdown: kramdown
+
+# Longer-form write-ups live in their own collection so they get clean,
+# date-free URLs like /projects/ipic-fluid-simulation/.
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .bundle

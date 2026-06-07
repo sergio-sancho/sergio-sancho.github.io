@@ -1,0 +1,31 @@
+{%- comment -%}
+Renders one "Other Projects" card. Expects `include.proj`.
+Like a publication but with a subtitle line instead of a venue, and an optional
+author `label` (e.g. "Supervisors:") on the first author.
+{%- endcomment -%}
+<div class="entry">
+  <div class="entry-media">
+    {% if include.proj.video %}
+      <video class="thumb" src="{{ '/assets/images/' | append: include.proj.video | relative_url }}" autoplay loop muted playsinline></video>
+    {% else %}
+      <img class="thumb" src="{{ '/assets/images/' | append: include.proj.image | relative_url }}" alt="{{ include.proj.title }}">
+    {% endif %}
+  </div>
+  <div class="entry-body">
+    {% if include.proj.link %}<a href="{{ include.proj.link }}"><span class="entry-title">{{ include.proj.title }}</span></a>
+    {% else %}<span class="entry-title">{{ include.proj.title }}</span>{% endif %}<br>
+    {% if include.proj.authors %}
+      {%- for a in include.proj.authors -%}
+        {%- if a.label %}{{ a.label }} {% endif -%}
+        {%- if a.me %}<strong>{{ a.name }}</strong>{% elsif a.url %}<a href="{{ a.url }}">{{ a.name }}</a>{% else %}{{ a.name }}{% endif -%}
+        {%- unless forloop.last %}, {% endunless -%}
+      {%- endfor %}<br>
+    {% endif %}
+    {{ include.proj.subtitle }}
+    {%- if include.proj.highlight %}<br>
+      {% if include.proj.highlight_url %}<a href="{{ include.proj.highlight_url }}"><span class="badge">{{ include.proj.highlight }}</span></a>
+      {% else %}<span class="badge">{{ include.proj.highlight }}</span>{% endif %}
+    {% endif %}
+    <p class="abstract">{{ include.proj.abstract }}</p>
+  </div>
+</div>

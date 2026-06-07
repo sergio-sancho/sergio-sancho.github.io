@@ -1,0 +1,7 @@
+# Courses taught as a teaching assistant.
+- code: "252-0543-01L"
+  name: "Computer Graphics"
+  url: "https://cgl.ethz.ch/teaching/cg24/home.php"
+- code: "252-0029-00L"
+  name: "Parallel Programming"
+  url: "https://spcl.inf.ethz.ch/Teaching/2025-pp/"

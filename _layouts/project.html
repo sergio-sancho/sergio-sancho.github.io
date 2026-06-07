@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="writeup">
+  <h1>{{ page.title }}</h1>
+  {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
+  {{ content }}
+</article>
+
+{%- comment -%}
+Per-post scripts: only the write-up that declares `scripts:` in its front matter
+loads them, so an interactive WebGL/canvas demo lives on its own page only.
+Set `module: true` to load them as ES modules.
+{%- endcomment -%}
+{% if page.scripts %}
+  {% for s in page.scripts %}
+    <script src="{{ s | relative_url }}"{% if page.module %} type="module"{% endif %} defer></script>
+  {% endfor %}
+{% endif %}
