@@ -123,11 +123,11 @@ section { margin-top: 44px; }
 }
 .entry-media { flex: 0 0 280px; }
 .thumb {
+  position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
-  height: auto;
-  object-fit: cover;
   border-radius: 12px;
+  overflow: hidden;
   border: 1px solid $rule;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -136,6 +136,16 @@ section { margin-top: 44px; }
   transform: scale(1.03);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
+.thumb-media, .thumb-anim {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.thumb-anim { opacity: 0; transition: opacity 0.25s ease; }
+.thumb.is-playing .thumb-anim { opacity: 1; }
 .entry-body { flex: 1 1 0; min-width: 0; }
 .entry-title { font-size: 17px; font-weight: 700; line-height: 1.3; }
 .authors { color: #6b7280; font-size: 14px; }

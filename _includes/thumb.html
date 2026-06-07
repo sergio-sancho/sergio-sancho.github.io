@@ -1,0 +1,18 @@
+{%- comment -%}
+Thumbnail with optional hover-to-play video. Params:
+  image  still image filename in /assets/images/  (the always-visible base)
+  video  optional always-autoplay video filename in /assets/images/ (legacy)
+  hover  optional video filename in /assets/videos/ that plays on hover
+  alt    alt text
+The hover video is layered over the still and faded in by site.js on hover.
+{%- endcomment -%}
+<div class="thumb">
+  {%- if include.video -%}
+    <video class="thumb-media" src="{{ '/assets/images/' | append: include.video | relative_url }}" autoplay loop muted playsinline></video>
+  {%- else -%}
+    <img class="thumb-media" src="{{ '/assets/images/' | append: include.image | relative_url }}" alt="{{ include.alt }}" loading="lazy">
+  {%- endif -%}
+  {%- if include.hover -%}
+    <video class="thumb-anim" src="{{ '/assets/videos/' | append: include.hover | relative_url }}" muted loop playsinline preload="none" aria-hidden="true"></video>
+  {%- endif -%}
+</div>

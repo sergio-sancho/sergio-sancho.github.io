@@ -3,11 +3,7 @@ Renders one publication card. Expects `include.pub`.
 {%- endcomment -%}
 <div class="entry">
   <div class="entry-media">
-    {% if include.pub.video %}
-      <video class="thumb" src="{{ '/assets/images/' | append: include.pub.video | relative_url }}" autoplay loop muted playsinline></video>
-    {% else %}
-      <img class="thumb" src="{{ '/assets/images/' | append: include.pub.image | relative_url }}" alt="{{ include.pub.title }}">
-    {% endif %}
+    {% include thumb.html image=include.pub.image video=include.pub.video hover=include.pub.hover alt=include.pub.title %}
   </div>
   <div class="entry-body">
     <span class="entry-title">{{ include.pub.title }}</span><br>

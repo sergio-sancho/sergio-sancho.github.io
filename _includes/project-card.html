@@ -5,11 +5,7 @@ author `label` (e.g. "Supervisors:") on the first author.
 {%- endcomment -%}
 <div class="entry">
   <div class="entry-media">
-    {% if include.proj.video %}
-      <video class="thumb" src="{{ '/assets/images/' | append: include.proj.video | relative_url }}" autoplay loop muted playsinline></video>
-    {% else %}
-      <img class="thumb" src="{{ '/assets/images/' | append: include.proj.image | relative_url }}" alt="{{ include.proj.title }}">
-    {% endif %}
+    {% include thumb.html image=include.proj.image video=include.proj.video hover=include.proj.hover alt=include.proj.title %}
   </div>
   <div class="entry-body">
     {% if include.proj.link %}<a href="{{ include.proj.link }}"><span class="entry-title">{{ include.proj.title }}</span></a>

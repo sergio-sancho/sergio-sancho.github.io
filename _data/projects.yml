@@ -25,7 +25,7 @@
   highlight_url: "https://cgl.ethz.ch/teaching/cg22/competition/competition.php"
   link: "https://cgl.ethz.ch/teaching/cg22/competition/competition.php"
   abstract: >
-    We implemented advanced features on top of an educational physically-based
+    We implement advanced features on top of an educational physically-based
     path tracer, such as volumetric rendering with ratio tracking, principled
     BSDFs and lens-based camera models.
 

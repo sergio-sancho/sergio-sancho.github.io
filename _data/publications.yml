@@ -12,6 +12,7 @@
 
 - title: "LookingGlass: Generative Anamorphoses via Laplacian Pyramid Warping"
   image: 2025_lookingglass.jpg
+  hover: 2025_lookingglass.mp4
   authors:
     - { name: "Pascal Chang", url: "https://pascalchang87.github.io/" }
     - { name: "Sergio Sancho", me: true }
