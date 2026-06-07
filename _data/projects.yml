@@ -4,8 +4,8 @@
   image: master_thesis.jpg
   subtitle: "Master Thesis at ETH Zurich, 2023"
   authors:
-    - { name: "Vinicius Azevedo", url: "https://studios.disneyresearch.com/people/vinicius-da-costa-de-azevedo/", label: "Supervisors:" }
-    - { name: "Jingwei Tang", url: "https://studios.disneyresearch.com/people/jingwei-tang/" }
+    - { name: "Vinicius Azevedo", label: "Supervisors:" }
+    - { name: "Jingwei Tang" }
     - { name: "Markus Gross", url: "https://cgl.ethz.ch/people/grossm/" }
   highlight: "ETH Medal Award"
   highlight_url: "https://inf.ethz.ch/news-and-events/spotlights/infk-news-channel/2024/09/eth-medals-and-willi-studer-prizes-for-masters-graduates.html"

@@ -15,9 +15,9 @@
   authors:
     - { name: "Pascal Chang", url: "https://pascalchang87.github.io/" }
     - { name: "Sergio Sancho", me: true }
-    - { name: "Jingwei Tang", url: "https://studios.disneyresearch.com/people/jingwei-tang/" }
+    - { name: "Jingwei Tang" }
     - { name: "Markus Gross", url: "https://cgl.ethz.ch/people/grossm/" }
-    - { name: "Vinicius Azevedo", url: "https://studios.disneyresearch.com/people/vinicius-da-costa-de-azevedo/" }
+    - { name: "Vinicius Azevedo" }
   venue: "CVPR"
   year: 2025
   highlight: "Oral Presentation"
@@ -32,9 +32,9 @@
   image: 2024_ipic.jpg
   authors:
     - { name: "Sergio Sancho", me: true }
-    - { name: "Jingwei Tang", url: "https://studios.disneyresearch.com/people/jingwei-tang/" }
+    - { name: "Jingwei Tang" }
     - { name: "Christopher Batty", url: "https://cs.uwaterloo.ca/~c2batty/" }
-    - { name: "Vinicius Azevedo", url: "https://studios.disneyresearch.com/people/vinicius-da-costa-de-azevedo/" }
+    - { name: "Vinicius Azevedo" }
   venue: "Eurographics"
   year: 2024
   highlight: "Best Paper Honorable Mention"
@@ -51,13 +51,13 @@
 - title: "ANISE: an application to design mechanobiology simulations of planar epithelia"
   image: 2022_anise.jpeg
   authors:
-    - { name: "Ángel Rodríguez Cerro", url: "https://producciocientifica.uv.es/investigadores/335863/detalle" }
+    - { name: "Ángel Rodríguez" }
     - { name: "Sergio Sancho", me: true }
-    - { name: "Míriam Rodríguez", url: "https://academic.oup.com/bioinformatics/search-results?f_Authors=M%c3%adriam+Rodr%c3%adguez" }
-    - { name: "Miguel A. Gamón", url: "https://www.uv.es/uvweb/universidad/es/ficha-persona-1285950309813.html?p2=magamon&idA=" }
-    - { name: "Léna Guitou", url: "https://scholar.google.com/citations?user=MCADaA0AAAAJ" }
-    - { name: "Rafael J. Martínez", url: "https://producciocientifica.uv.es/investigadores/364921/detalle" }
-    - { name: "Javier Buceta", url: "https://scholar.google.com/citations?user=IE64vjgAAAAJ&hl=en" }
+    - { name: "Míriam Rodríguez" }
+    - { name: "Miguel Gamón" }
+    - { name: "Léna Guitou" }
+    - { name: "Rafael Martínez" }
+    - { name: "Javier Buceta" }
   venue: "Bioinformatics, Volume 38, Issue 17"
   year: 2022
   abstract: >
