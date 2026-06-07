@@ -1,0 +1,2 @@
+{%- comment -%}Award badge. Expects `include.text`. Pass `icon=false` to omit the medal (e.g. for "Oral Presentation", which is a distinction, not an award).{%- endcomment -%}
+<span class="badge">{% if include.icon != false %}<span class="badge-icon" aria-hidden="true">🎖️</span>{% endif %}{{ include.text }}</span>

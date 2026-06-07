@@ -18,7 +18,7 @@ Renders one publication card. Expects `include.pub`.
       {%- endfor -%}
     </span><br>
     <span class="entry-meta"><em>{{ include.pub.venue }}</em>, {{ include.pub.year }}
-      {%- if include.pub.highlight %} <span class="badge">{{ include.pub.highlight }}</span>{% endif %}</span>
+      {%- if include.pub.highlight %} {% include badge.html text=include.pub.highlight icon=include.pub.medal %}{% endif %}</span>
     <div class="links-row">
       {% for l in include.pub.links -%}
         <a class="btn" href="{{ l.url }}">{{ l.text }}</a>

@@ -21,6 +21,7 @@
   venue: "CVPR"
   year: 2025
   highlight: "Oral Presentation"
+  medal: false            # distinction, not an award -> no medal icon
   abstract: >
     We repurpose latent diffusion models to generate high-quality, complex,
     multi-view optical illusions such as anamorphoses.
@@ -36,7 +37,7 @@
     - { name: "Vinicius Azevedo", url: "https://studios.disneyresearch.com/people/vinicius-da-costa-de-azevedo/" }
   venue: "Eurographics"
   year: 2024
-  highlight: "Honorable Mention"
+  highlight: "Best Paper Honorable Mention"
   abstract: >
     We propose a hybrid fluid simulation method that uses the impulse formulation
     on particles to improve vorticity preservation.
@@ -44,7 +45,8 @@
     - { text: "project", url: "https://studios.disneyresearch.com/2024/04/25/the-impulse-particle-in-cell-method/" }
     - { text: "paper", url: "https://assets.studios.disneyresearch.com/app/uploads/2024/04/The-Impulse-Particle-In-Cell-Method-Paper.pdf" }
     - { text: "video", url: "https://www.youtube.com/watch?v=cmDSsBZ16MY" }
-  writeup: { slug: ipic-fluid-simulation }
+  # writeup link hidden until the write-up is finished:
+  # writeup: { slug: ipic-fluid-simulation }
 
 - title: "ANISE: an application to design mechanobiology simulations of planar epithelia"
   image: 2022_anise.jpeg

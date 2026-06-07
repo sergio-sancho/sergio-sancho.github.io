@@ -25,8 +25,8 @@ author `label` (e.g. "Supervisors:") on the first author.
     {% endif %}
     <span class="entry-meta">{{ include.proj.subtitle }}</span>
     {%- if include.proj.highlight %}<br>
-      {% if include.proj.highlight_url %}<a href="{{ include.proj.highlight_url }}"><span class="badge">{{ include.proj.highlight }}</span></a>
-      {% else %}<span class="badge">{{ include.proj.highlight }}</span>{% endif %}
+      {% if include.proj.highlight_url %}<a href="{{ include.proj.highlight_url }}">{% include badge.html text=include.proj.highlight %}</a>
+      {% else %}{% include badge.html text=include.proj.highlight %}{% endif %}
     {% endif %}
     <p class="abstract">{{ include.proj.abstract }}</p>
   </div>
