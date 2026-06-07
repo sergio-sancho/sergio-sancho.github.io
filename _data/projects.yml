@@ -28,3 +28,15 @@
     We implemented advanced features on top of an educational physically-based
     path tracer, such as volumetric rendering with ratio tracking, principled
     BSDFs and lens-based camera models.
+
+- title: "Virtual Reality Training Simulators with Natural Hand Interaction"
+  image: bachelor.jpg
+  subtitle: "Bachelor's Thesis at University of Valencia, 2020"
+  authors:
+    - { name: "Rafael Martínez", label: "Supervisor:" }
+  highlight: "Best Bachelor's Thesis Award"
+  abstract: >
+    We develop a framework that brings Virtual Reality headsets to existing
+    simulation environments for crane and construction training. We focus on a
+    novel hand-detection interface that lets users operate the machinery with
+    both real and virtual controllers.
