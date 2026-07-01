@@ -10,6 +10,29 @@
 #   links     list of { text, url }
 #   writeup   optional { slug: <_projects filename without .md> } -> adds a write-up link
 
+- title: "Neural Render Proxies for Interactive and Differentiable Lighting"
+  image: 2026_nrp.jpg
+  authors:
+    - { name: "Sergio Sancho", me: true }
+    - { name: "Alexander Rath", url: "https://graphics.cg.uni-saarland.de/people/rath.html" }
+    - { name: "Marco Manzi" }
+    - { name: "Pascal Chang", url: "https://pascalchang87.github.io/" }
+    - { name: "Amit Bermano", url: "https://www.cs.tau.ac.il/~amberman/" }
+    - { name: "Derek Nowrouzezahrai", url: "https://mila.quebec/en/directory/derek-nowrouzezahrai" }
+    - { name: "Markus Gross", url: "https://cgl.ethz.ch/people/grossm/" }
+    - { name: "Marios Papas" }
+  venue: "EGSR"
+  year: 2026
+  abstract: >
+    We train small, scene-specific neural networks with a decoupled rendering
+    algorithm to enable interactive relighting and art-directed light edits of
+    complex production scenes.
+  links:
+    - { text: "project", url: "https://studios.disneyresearch.com/2026/07/01/neural-render-proxies-for-interactive-and-differentiable-lighting/" }
+    - { text: "paper", url: "https://studios.disneyresearch.com/app/uploads/2026/06/Neural-Render-Proxies-for-Interactive-and-Differentiable-Lighting-Paper.pdf" }
+    - { text: "supplemental", url: "https://studios.disneyresearch.com/app/uploads/2026/06/Neural-Render-Proxies-for-Interactive-and-Differentiable-Lighting-Supplemental-Material.pdf.pdf" }
+    - { text: "video", url: "https://www.youtube.com/watch?v=jgD5w3RM0k4" }
+
 - title: "LookingGlass: Generative Anamorphoses via Laplacian Pyramid Warping"
   image: 2025_lookingglass.jpg
   hover: 2025_lookingglass.mp4
