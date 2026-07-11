@@ -2,6 +2,7 @@
 # line instead of a venue. Optional highlight badge (with optional highlight_url).
 - title: "Vorticity-Preserving Methods for Efficient Fluid Simulation"
   image: master_thesis.jpg
+  hover: master_thesis.mp4
   subtitle: "Master Thesis at ETH Zurich, 2023"
   authors:
     - { name: "Vinicius Azevedo", label: "Supervisors:" }

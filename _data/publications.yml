@@ -12,6 +12,7 @@
 
 - title: "Neural Render Proxies for Interactive and Differentiable Lighting"
   image: 2026_nrp.jpg
+  hover: 2026_nrp.mp4
   authors:
     - { name: "Sergio Sancho", me: true }
     - { name: "Alexander Rath", url: "https://graphics.cg.uni-saarland.de/people/rath.html" }
@@ -62,6 +63,7 @@
 
 - title: "The Impulse Particle-In-Cell Method"
   image: 2024_ipic.jpg
+  hover: 2024_ipic.mp4
   authors:
     - { name: "Sergio Sancho", me: true }
     - { name: "Jingwei Tang" }
