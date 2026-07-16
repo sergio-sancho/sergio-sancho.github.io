@@ -30,11 +30,11 @@
 
   var canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
-  // ---- Desktop: hover to play -------------------------------------------
+  // ---- Desktop: hover anywhere on the entry to play ---------------------
   if (canHover) {
     items.forEach(function (it) {
-      it.thumb.addEventListener('mouseenter', function () { play(it); });
-      it.thumb.addEventListener('mouseleave', function () { stop(it, true); });
+      it.entry.addEventListener('mouseenter', function () { play(it); });
+      it.entry.addEventListener('mouseleave', function () { stop(it, true); });
     });
     return;
   }
